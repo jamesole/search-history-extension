@@ -1,0 +1,19 @@
+{
+    "name": "LinkSave",
+    "description": "Track your Links. Everywhere.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "LinkSave"
+    },
+    "permissions": [
+        "tabs", "activeTab", "storage", "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
